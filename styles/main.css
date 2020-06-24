@@ -1,6 +1,7 @@
 html, body {
     margin: 0;
     padding: 0;
+    /* width: 100vw; */
 }
 
 /* Header */
@@ -13,6 +14,8 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    background-color: #fff;
+
 }
 
 #header_logo {
@@ -76,6 +79,24 @@ header {
     font-family: "Harmonia", Arial, sans-serif;
     line-height: 1.15;
     font-weight: 700;
+    animation: description_titie-anim 1s linear forwards;
+}
+
+@keyframes description_titie-anim {
+    0% {
+        opacity: 0;
+        transform: translateX(0px)translateY(0px)rotate(0deg)scale(1,1);
+        animation-timing-function: linear;
+    }
+    1% {
+        opacity: 0;
+        transform: translateX(-2000px)translateY(0px)rotate(0deg)scale(1,1);
+        animation-timing-function: ease-out;
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px)translateY(0px)rotate(0deg)scale(1,1);
+    }
 }
 
 #description_text {
@@ -84,6 +105,24 @@ header {
     font-family: "Harmonia", Arial, sans-serif;
     line-height: 1.55;
     font-weight: 400;
+    animation: description_title_text 1s linear forwards;
+}
+
+@keyframes description_title_text {
+    0% {
+        opacity: 0;
+        transform: translateX(0px)translateY(0px)rotate(0deg)scale(1,1);
+        animation-timing-function: linear;
+    }
+    1% {
+        opacity: 0;
+        transform: translateX(0px)translateY(10px)rotate(0deg)scale(1,1);
+        animation-timing-function: ease-out;
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px)translateY(0px)rotate(0deg)scale(1,1);
+    }
 }
 
 #decription_info {
@@ -367,3 +406,199 @@ header {
 }
 
 /* Benefits */
+
+#benefits {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section_title {
+    color: #000000;
+    font-size: 50px;
+    font-family: "Harmonia", Arial, sans-serif;
+    line-height: 1.55;
+    font-weight: 500;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+}
+#benefits_items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.benefits_item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 640px;
+}
+
+.right {
+    background-position: right;
+}
+
+.benefits_item__preview_number {
+    position: relative;
+    z-index: 1;
+    width: 200px;
+    height: auto;
+}
+
+.benefits_item__preview_number-left {
+    bottom: 300px;
+    left: 140px;
+}
+.benefits_item__preview_number-right {
+    bottom: 200px;
+    right: 200px;
+}
+
+.rotate180 {
+    transform: rotate(180deg);
+}
+
+.benefits_item__preview_image {
+    position: relative;
+    width: 520px;
+    height: auto;
+}
+
+.benefits_item__preview_image-left {
+    top: 50px;
+    animation: preview_image-left-anim 2s linear forwards;
+}
+
+@keyframes preview_image-left-anim {
+    0% {
+        opacity: 0;
+        transform: translateX(0px)translateY(0px)rotate(0deg)scale(1,1);
+        animation-timing-function: linear;
+    }
+    1% {
+        opacity: 0;
+        transform: translateX(0px)translateY(0px)rotate(0deg)scale(1,1);
+        animation-timing-function: ease-in-out;
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(-83px)translateY(-47px)rotate(0deg)scale(1.1,1.1);
+    }
+}
+
+.benefits_item__preview_image-right {
+    top: 100px;
+    animation: preview_image-right-anim 2s linear forwards;
+}
+
+@keyframes preview_image-right-anim {
+    0% {
+        opacity: 0;
+        transform: translateX(0px)translateY(0px)rotate(0deg)scale(1,1);
+        animation-timing-function: linear;
+    }
+    1% {
+        opacity: 0;
+        transform: translateX(0px)translateY(0px)rotate(0deg)scale(1,1);
+        animation-timing-function: ease-in-out;
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(116px)translateY(-69px)rotate(0deg)scale(1.1,1.1);
+    }
+}
+.benefits_item__description {
+    display: flex;
+    flex-direction: column;
+    height: 640px;
+    justify-content: center;
+}
+
+.benefits_item__description_title {
+    color: #000000;
+    font-size: 35px;
+    font-family: "Harmonia", Arial, sans-serif;
+    line-height: 1.55;
+    font-weight: 700;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+    animation: benefits_item__description_title-anim 1s linear forwards;
+}
+
+@keyframes benefits_item__description_title-anim {
+    0% {
+        opacity: 0;
+        transform: translateX(0px)translateY(0px)rotate(0deg)scale(1,1);
+        animation-timing-function: linear;
+    }
+    1% {
+        opacity: 0;
+        transform: translateX(0px)translateY(10px)rotate(0deg)scale(1,1);
+        animation-timing-function: ease-out;
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px)translateY(0px)rotate(0deg)scale(1,1);
+    }
+}
+
+
+.benefits_item__description_text {
+    color: #8f8f8f;
+    font-size: 20px;
+    font-family: "Harmonia", Arial, sans-serif;
+    line-height: 1.55;
+    font-weight: 400;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+    animation: benefits_item__description_text-anim 1.4s linear forwards;
+}
+
+@keyframes benefits_item__description_text-anim {
+    0% {
+        opacity: 0;
+        transform: translateX(0px)translateY(0px)rotate(0deg)scale(1,1);
+        animation-timing-function: linear;
+    }
+    1% {
+        opacity: 0;
+        transform: translateX(0px)translateY(20px)rotate(0deg)scale(1,1);
+        animation-timing-function: linear;
+    }
+    30% {
+        opacity: 0;
+        transform: translateX(0px)translateY(20px)rotate(0deg)scale(1,1);
+        animation-timing-function: ease-out;
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px)translateY(0px)rotate(0deg)scale(1,1);
+    }
+}
+
+.benefits_item__preview {
+    background-image: url('../images/benefits/cloud.png');
+    background-repeat: no-repeat;
+    height: 640px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+
+.pr20 {
+    padding-right: 20px;
+}
+
+.pl20 {
+    padding-left: 20px;
+}
