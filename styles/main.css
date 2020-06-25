@@ -62,7 +62,7 @@ header {
 
 .header_menu_list__item_link {
     text-decoration: none;
-    color: #777777;
+    color: #000000;
     font-size: 16px;
     font-family: "Harmonia", Arial, sans-serif;
     line-height: 1.55;
@@ -87,6 +87,17 @@ header {
     text-decoration: none;
     font-weight: 700;
     color: #fff;
+    font-size: 16px;
+    font-family: "Harmonia", Arial, sans-serif;
+    line-height: 1.55;
+}
+
+#description_btn__link_get, #description_btn__link_buy {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 55px;
+    margin-bottom: 20px;
 }
 
 /* Description */
@@ -164,7 +175,6 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
 }
 
 #description_btn__link_get {
@@ -625,7 +635,8 @@ header {
     align-items: center;
     width: 365px;
     height: 55px;
-    border-radius: 2px;
+    border-width: 1px;
+    border-radius: 5px;
     background-position: center center;
     border-color: #058dd9;
     border-style: solid;
@@ -643,10 +654,167 @@ header {
 #usage_button__image {
     width: 45px;
     height: auto;
+    animation: usage_button__image-anim 6s infinite linear;
 }
+
+#demo_item__images {
+    display: flex;
+    flex-direction: column;
+}
+
+@keyframes usage_button__image-anim {
+    0% {
+        opacity: 1;
+        transform: translateX(0px)translateY(0px)rotate(0deg)scale(1,1);
+        animation-timing-function: ease-in-out;
+    }
+    50% {
+        opacity: 1;
+        transform: translateX(15px)translateY(0px)rotate(0deg)scale(1,1);
+        animation-timing-function: ease-in-out;
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px)translateY(0px)rotate(0deg)scale(1,1);
+    }
+}
+
+
 
 #usage_button__link {
     text-decoration: none;
+}
+
+/* Demo */
+#demo {
+    height: 680px;
+}
+#demo_items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.demo_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+}
+
+.demo_item__title {
+    color: #000000;
+    font-size: 16px;
+    font-family: "Harmonia", Arial, sans-serif;
+    line-height: 1.55;
+    font-weight: 700;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+}
+.demo_item__image {
+    width: 430px;
+    height: auto;
+    
+}
+#demo_item__images {
+    display: grid;
+    grid-template-columns: repeat(5, 86px);
+    grid-template-rows: repeat(5, 87,8px);
+    /* grid-template-areas: ". . . loop . . ."
+                         ". law law law law law ."
+                         ". law law law law law ."
+                         "pen law law law law law shield"
+                         ". law law law law law ."
+                         ". law law law law law ."
+                         ". . . . pc . ."; */
+}
+
+#demo_item__sign {
+    position: relative;
+    width: 182px;
+    height: auto;
+    top: 250px;
+    left: 150px;
+}
+
+#demo_item__sign_rot {
+
+}
+
+#demo_item__arrow_left {
+    position: relative;  
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+    animation: demo_item__arrow_left-anim 4s linear forwards;
+    width: 70px;
+    height: auto;
+    top: 290px;
+    left: 220px;
+    transform: rotate(315deg);
+    -webkit-transform: rotate(315deg);
+}
+
+@keyframes demo_item__arrow_left-anim {
+    0% {
+        opacity: 1;
+        transform: translateX(0px)translateY(0px)rotate(0deg)scale(1,1);
+        animation-timing-function: linear;
+    }
+    1% {
+        opacity: 1;
+        transform: translateX(0px)translateY(0px)rotate(80deg)scale(0,0);
+        animation-timing-function: linear;
+    }
+    76% {
+        opacity: 1;
+        transform: translateX(0px)translateY(0px)rotate(80deg)scale(0,0);
+        animation-timing-function: cubic-bezier(0.34,1.61,0.7,1);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px)translateY(0px)rotate(0deg)scale(1,1);
+    }
+}
+
+#demo_item__image_text {
+    color: #000000;
+    font-size: 20px;
+    font-family: "Harmonia", Arial, sans-serif;
+    line-height: 1.55;
+    font-weight: 700;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+    animation: demo_item__image_text-anim 4s linear forwards;
+    position: relative;
+    width: 190px;
+    top: 350px;
+    left: 120px;
+}
+
+@keyframes demo_item__image_text-anim {
+    0% {
+        opacity: 0;
+        transform: translateX(0px)translateY(0px)rotate(0deg)scale(1,1);
+        animation-timing-function: linear;
+    }
+    1% {
+        opacity: 0;
+        transform: translateX(0px)translateY(10px)rotate(0deg)scale(1,1);
+        animation-timing-function: linear;
+    }
+    76% {
+        opacity: 0;
+        transform: translateX(0px)translateY(10px)rotate(0deg)scale(1,1);
+        animation-timing-function: ease-in-out;
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(-7px)translateY(-1px)rotate(0deg)scale(1,1);
+    }
 }
 
 /* Large desktops and laptops */
@@ -778,6 +946,7 @@ header {
 
     .section_title {
         font-size: 30px;
+        text-align: center;
     }
 
     .benefits_item__description_title {
@@ -816,4 +985,67 @@ header {
         text-align: right;
     }
 
+    /* Usage */
+    #usage_items {
+        flex-direction: column;
+    }
+
+    #usage_container {
+        height: 2350px;
+    }
+    
+    .mr30 {
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
+
+    #usage_button__text {
+        color: #000000;
+        font-size: 14px;
+        font-family: "Harmonia", Arial, sans-serif;
+        line-height: 1.55;
+        font-weight: 500;
+    }
+
+    #usage_button {
+        width: 285px;
+        height: 55px;
+    }
+
+    #usage_button__image {
+        width: 45px;
+    }
+
+    /* Demo */
+    #demo_items {
+        flex-direction: column;
+    }
+
+    #demo_item__sign {
+        width: 185px;
+        left: 50px;
+        top: 200px;
+    }
+    #demo_item__sign_rot {
+        transform: rotate(90deg);
+    }
+
+    #demo_item__arrow_left {
+        top: 60px;
+        left: 230px;
+    }
+
+    #demo_item__image_text {
+        left: -200px;
+        top: 370px;
+    }
+
+    #demo_item__images {
+        grid-template-columns: repeat(5, 58px);
+        grid-template-rows: repeat(3, 87,8px);
+    }
+
+    .demo_item__image {
+        width: 290px;
+    }
 }
