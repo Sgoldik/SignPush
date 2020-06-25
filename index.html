@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./styles/main.css" type="text/css"/>
         <link rel="shortcut icon" href="./fav.ico" type="image/x-icon" />
+        <script src="./scripts/main.js"></script>
         <title>SignPush</title>
     </head>
     <body>
@@ -27,11 +28,11 @@
                             Интеграция
                         </a>
                     </li>
-                    <div id="header_button">
-                        <a id="header_button__link" rel="stylesheet" href="https://signpush.ru/">
-                            Войти
-                        </a>
-                    </div>
+                    <a id="header_button__link" rel="stylesheet" href="https://signpush.ru/">
+                        <div id="header_button">
+                                Войти
+                        </div>
+                    </a>
                 </ul>
             </menu>
         </header>
@@ -53,16 +54,16 @@
                     Бесплатное Android приложение
                 </p>
                 <div id="description_buttons">
-                    <div class="description_btn" id="d_btn_get">
-                        <a id="description_btn__link_get" rel="stylesheet" href="https://signpush.ru/">
-                            Получить бесплатно
-                        </a>
-                    </div>
-                    <div class="description_btn" id="d_btn_buy">
-                        <a id="description_btn__link_buy" rel="stylesheet" href="https://signpush.ru/">
-                            Купить бизнес пакет
-                        </a>
-                    </div>
+                    <a id="description_btn__link_get" rel="stylesheet" href="https://signpush.ru/">
+                        <div class="description_btn" id="d_btn_get">
+                                Получить бесплатно
+                        </div>
+                    </a>
+                    <a id="description_btn__link_buy" rel="stylesheet" href="https://signpush.ru/">
+                        <div class="description_btn" id="d_btn_buy">
+                                Купить бизнес пакет
+                        </div>
+                    </a>
                 </div>
             </div>
             <div id="description_preview">
@@ -83,7 +84,7 @@
                         
                     </div>
                     <div class="benefits_item__description pl20">
-                        <h1 class="benefits_item__description_title">
+                        <h1 class="benefits_item__description_title txt-aling_right">
                             Подпишите любой
                             <br />
                             документ, где угодно
@@ -105,7 +106,7 @@
                         </h1>
                     </div>
                 </div>
-                <div class="benefits_item">
+                <div class="benefits_item" id="benefits_item-invert">
                     <div class="benefits_item__description pr20">
                         <h1 class="benefits_item__description_title">
                             Ваши клиенты будут
@@ -135,7 +136,7 @@
                         
                     </div>
                     <div class="benefits_item__description pl20">
-                        <h1 class="benefits_item__description_title">
+                        <h1 class="benefits_item__description_title txt-aling_right">
                             Вы сэкономите время и силы
                         </h1>
                         <h1 class="benefits_item__description_text">
