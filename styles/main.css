@@ -627,7 +627,7 @@ header {
     border-style: solid;
 }
 
-#usage_button {
+.usage_button {
     margin-top: 50px;
     display: flex;
     flex-direction: row;
@@ -642,7 +642,7 @@ header {
     border-style: solid;
     transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 }
-#usage_button__text {
+.usage_button__text {
     color: #000000;
     font-size: 20px;
     font-family: "Harmonia", Arial, sans-serif;
@@ -651,7 +651,7 @@ header {
     margin-right: 10px;
 }
 
-#usage_button__image {
+.usage_button__image {
     width: 45px;
     height: auto;
     animation: usage_button__image-anim 6s infinite linear;
@@ -681,7 +681,7 @@ header {
 
 
 
-#usage_button__link {
+.usage_button__link {
     text-decoration: none;
 }
 
@@ -737,10 +737,6 @@ header {
     height: auto;
     top: 250px;
     left: 150px;
-}
-
-#demo_item__sign_rot {
-
 }
 
 #demo_item__arrow_left {
@@ -817,6 +813,281 @@ header {
     }
 }
 
+/* Integration */
+#integration_container {
+    height: 550px;
+    background-color: #f6f6fe;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#integration_description {
+    margin-left: 50px;
+}
+
+#integration_description__title {
+    color: #000000;
+    font-size: 30px;
+    font-family: "Harmonia", Arial, sans-serif;
+    line-height: 1.55;
+    font-weight: 700;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+}
+
+#integration_description__text {
+    color: #000000;
+    font-size: 20px;
+    font-family: "Harmonia", Arial, sans-serif;
+    line-height: 1.55;
+    font-weight: 400;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+}
+
+#integration_preview__android {
+    width: 135px;
+    height: auto;
+    animation: integration_preview-anim 3s linear forwards;
+    grid-area: android;
+}
+
+@keyframes integration_preview-anim {
+    0% {
+        opacity: 0;
+        transform: translateX(0px)translateY(0px)rotate(0deg)scale(1,1);
+        animation-timing-function: linear;
+    }
+    1% {
+        opacity: 0;
+        transform: translateX(0px)translateY(0px)rotate(0deg)scale(0,0);
+        animation-timing-function: linear;
+    }
+    84% {
+        opacity: 0;
+        transform: translateX(0px)translateY(0px)rotate(0deg)scale(0,0);
+        animation-timing-function: ease-out;
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px)translateY(0px)rotate(0deg)scale(1,1);
+    }
+}
+
+#integration_preview__1c {
+    animation: integration_preview-anim 2.9s linear forwards;
+    width: 90px;
+    height: auto;
+    grid-area: c;
+}
+
+#integration_preview__wheel {
+    animation: integration_preview-anim 2.8s linear forwards;
+    width: 60px;
+    height: auto;
+    grid-area: wheel;
+}
+
+#integration_preview__bitrix {
+    width: 75px;
+    height: auto;
+    grid-area: bitrix;
+    animation: integration_preview-anim 2.3s linear forwards;
+}
+
+#integration_preview__n {
+    width: 70px;
+    height: auto;
+    grid-area: n;
+    animation: integration_preview-anim 2.7s linear forwards;
+}
+
+#integration_preview__amocrm {
+    width: 145px;
+    height: auto;
+    grid-area: amocrm;
+    animation: integration_preview-anim 2.4s linear forwards;
+}
+
+#integration_preview__api {
+    width: 65px;
+    height: auto;
+    grid-area: api;
+    animation: integration_preview-anim 2.5s linear forwards;
+}
+
+#integration_preview__megaplan {
+    width: 135px;
+    height: auto;
+    grid-area: megaplan;
+    animation: integration_preview-anim 2.6s linear forwards;
+}
+
+#integration_preview__pen_container {
+    border-radius: 10px;
+    background-color: #ffffff;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+    box-shadow: 1px 1px 20px 0px rgba(0, 0, 0, 0.3);
+    grid-area: pen;
+    height: 180px;
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.integration_preview__line {
+    height: 3px;
+    width: 60px;
+    background-color: #8f8f8f;
+    background-position: center center;
+}
+.rot45 {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.rot90 {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.rot135 {
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+
+#integration_preview__line1_container {
+    animation: integration_preview__line-anim 0.5s linear forwards;
+    grid-area: line1;
+}
+
+#integration_preview__line2_container {
+    animation: integration_preview__line-anim 0.7s linear forwards;
+    grid-area: line2;
+}
+
+#integration_preview__line3_container {
+    animation: integration_preview__line-anim 0.9s linear forwards;
+    grid-area: line3;
+}
+
+#integration_preview__line4_container {
+    animation: integration_preview__line-anim 1.9s linear forwards;
+    grid-area: line4;
+}
+
+#integration_preview__line5_container {
+    animation: integration_preview__line-anim 1.1s linear forwards;
+    grid-area: line5;
+}
+
+#integration_preview__line6_container {
+    animation: integration_preview__line-anim 1.7s linear forwards;
+    grid-area: line6;
+}
+
+#integration_preview__line7_container {
+    animation: integration_preview__line-anim 1.5s linear forwards;
+    grid-area: line7;
+}
+
+#integration_preview__line8_container {
+    animation: integration_preview__line-anim 1.3s linear forwards;
+    grid-area: line8;
+}
+
+@keyframes integration_preview__line-anim {
+    0% {
+        opacity: 0;
+        transform: translateX(0px)translateY(0px)rotate(0deg)scale(1,1);
+        animation-timing-function: linear;
+    }
+    1% {
+        opacity: 0;
+        transform: translateX(0px)translateY(0px)rotate(0deg)scale(0,0);
+        animation-timing-function: ease-out;
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px)translateY(0px)rotate(0deg)scale(1,1);
+    }
+}
+
+#integration_preview {
+    display: grid;
+    grid-template-columns: repeat(9, 60px);
+    grid-template-rows: repeat(9, 60px);
+    grid-template-areas: 
+    ". . . . c . . . ."
+    ". android . . line2 . . wheel ."
+    ". . line1 . line2 . line3 . ."
+    ". . . pen pen pen . . ."
+    "bitrix line4 line4 pen pen pen line5 line5 n"
+    ". . . pen pen pen . . ."
+    ". . line6 . line7 . line8 . ."
+    ". amocrm amocrm . line7 . megaplan megaplan ."
+    ". . . . api . . . .";
+    align-items: center;
+    justify-items: center;
+}
+
+#integration_preview__pen {
+    width: 120px;
+    height: auto;
+}
+
+#integration_preview__pen_item1 {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+#integration_preview__cross {
+    display: grid;
+    grid-template-columns: repeat(1, 20px);
+    grid-template-rows: repeat(1, 20px);
+}
+
+#cross1 {
+    transform: rotate(135deg);
+    background-color: #8f8f8f;
+    background-position: center center;
+    border-color: transparent;
+    height: 2px;
+    width: 20px;
+    grid-row: 1;
+    grid-column: 1;
+}
+
+#cross2 {
+    transform: rotate(45deg);
+    background-color: #8f8f8f;
+    background-position: center center;
+    border-color: transparent;
+    height: 2px;
+    width: 20px;
+    grid-row: 1;
+    grid-column: 1;
+}
+#integration_preview__pen_item2 {
+    border-width: 2px;
+    border-radius: 0px;
+    background-position: center center;
+    border-color: #8f8f8f;
+    border-style: dashed;
+    width: 150px;
+}
 /* Large desktops and laptops */
 @media (min-width: 1200px) {
 
@@ -999,7 +1270,7 @@ header {
         margin-bottom: 30px;
     }
 
-    #usage_button__text {
+    .usage_button__text {
         color: #000000;
         font-size: 14px;
         font-family: "Harmonia", Arial, sans-serif;
@@ -1007,12 +1278,12 @@ header {
         font-weight: 500;
     }
 
-    #usage_button {
+    .usage_button {
         width: 285px;
         height: 55px;
     }
 
-    #usage_button__image {
+    .usage_button__image {
         width: 45px;
     }
 
