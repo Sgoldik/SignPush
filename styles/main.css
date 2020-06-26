@@ -1335,7 +1335,189 @@ header {
     align-items: center;
 }
 
+/* Trial */
 
+#trial_item {
+    height: 550px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #f6f6fe;
+}
+
+#trial_item__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#trial_item__preview {
+    margin-left: 100px;
+}
+
+#trial_item__preview_image {
+    animation: trial_item__preview_image-anim 1s linear forwards;
+    width: 510px;
+    height: auto;
+}
+
+#trial_item__description_title {
+    color: #000000;
+    font-size: 30px;
+    font-family: "Harmonia", Arial, sans-serif;
+    line-height: 1.55;
+    font-weight: 700;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+}
+
+.trial_item__btn {
+    width: 315px;
+}
+
+@keyframes trial_item__preview_image-anim {
+    0% {
+        opacity: 0;
+        transform: translateX(0px)translateY(0px)rotate(0deg)scale(1,1);
+        animation-timing-function: linear;
+    }
+    1% {
+        opacity: 0;
+        transform: translateX(50px)translateY(0px)rotate(0deg)scale(1,1);
+        animation-timing-function: ease-out;
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px)translateY(0px)rotate(0deg)scale(1,1);
+    }
+}
+
+/* Footer */
+
+footer {
+    height: 270px;
+    background-color: #058dd9;
+    display: flex;
+    justify-content: space-around;
+}
+
+#footer_links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#footer_links__menu {
+    display: flex;
+    flex-direction: column;
+    margin-right: 100px;
+}
+
+#footer_links__menu_list {
+    margin: 0;
+    padding: 0;
+}
+.footer_links__menu_list__item {
+    list-style-type: none;
+}
+.footer_links__menu_list__item_link {
+    color: #ffffff;
+    font-size: 16px;
+    font-family: "Harmonia", Arial, sans-serif;
+    line-height: 1.55;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.footer_links__menu_title {
+    color: #ffffff;
+    font-size: 18px;
+    font-family: "Harmonia", Arial, sans-serif;
+    line-height: 1.55;
+    font-weight: 700;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+}
+
+#footer_links__contacts_list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 120px;
+}
+
+.footer_links__contacts_list__link {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-family: "Harmonia", Arial, sans-serif;
+    line-height: 1.55;
+    font-weight: 400;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+}
+#footer_buttons__copyright_image {
+    width: 150px;
+    height: auto;
+}
+
+#footer_button {
+    border-width: 1px;
+    border-radius: 5px;
+    background-position: center center;
+    border-color: #ffffff;
+    border-style: solid;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    width: 200px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+#footer_button__link {
+    color: #ffffff;
+    font-size: 15px;
+    font-family: "Harmonia", Arial, sans-serif;
+    line-height: 1.55;
+    font-weight: 700;
+    width: 200px;
+    height: 55px;
+    text-decoration: none;
+}
+
+#footer_buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-end;
+
+}
+
+#footer_buttons__copyright_text {
+    text-decoration: none;
+    color: rgb(255, 255, 255) !important;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    box-shadow: inset 0px 0px 0px 0px rgb(255, 255, 255);
+    -webkit-box-shadow: inset 0px 0px 0px 0px rgb(255, 255, 255);
+    -moz-box-shadow: inset 0px -0px 0px 0px rgb(255, 255, 255);
+    font-size: 12px;
+    font-family: "Harmonia", Arial, sans-serif;
+    line-height: 1.55;
+    font-weight: 700;
+    background-position: center center;
+    border-color: transparent;
+}
+
+#footer_buttons__copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
 /* Large desktops and laptops */
 @media (min-width: 1200px) {
 
@@ -1527,7 +1709,7 @@ header {
     }
 
     .usage_button {
-        width: 285px;
+        width: 315px;
         height: 55px;
     }
 
@@ -1643,6 +1825,20 @@ header {
         grid-template-rows: repeat(9, 38px);
         margin-top: 40px;
     }
+
+    #integration_description__title {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    #integration_description {
+        margin-left: 0px;
+    }
+
+    #integration_description__text {
+        text-align: center;
+        font-size: 14px;
+    }
     
     /* How To */
 
@@ -1735,5 +1931,82 @@ header {
         height: 55px;
     }
     
+    #trial_item {
+        flex-direction: column-reverse;
+    }
+
+    #trial_item__description_title {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    #trial_item__preview_image {
+        width: 250px;
+        padding-left: 30px;
+    }
+
+    #trial_item__preview {
+    
+        margin-left: 0px;
+    }
+
+    .trial_item_button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .usage_button__text {
+        font-size: 20px;
+        font-family: "Harmonia", Arial, sans-serif;
+        line-height: 1.55;
+        font-weight: 500;
+    }
+
+    .usage_button__link {
+        display: flex;
+        justify-content: center;
+    }
+    /* Footer */
+    footer {
+        flex-direction: column;
+        height: 430px;
+        align-items: center;
+    }
+
+    #footer_links__menu {
+        margin-right: 30px;
+        padding: 0;
+    }
+    .footer_links__menu_list__item {
+        width: 138px;
+    }
+    .footer_links__menu_list__item_link {
+        font-size: 14px;
+    }
+
+    .footer_links__contacts_list__link {
+        font-size: 14px;
+    }
+
+    #footer_buttons {
+        align-items: center;
+    }
+
+    #footer_buttons__copyright {
+        align-items: center;
+    }
+
+    #footer_button__link {
+        margin-bottom: 20px;
+        width: 280px;
+        height: 55px;
+    }
+
+    #footer_button {
+        width: 280px;
+        height: 55px;
+    }
+
 }
 
