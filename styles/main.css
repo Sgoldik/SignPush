@@ -1088,6 +1088,224 @@ header {
     border-style: dashed;
     width: 150px;
 }
+
+/* How To */
+
+#howto {
+    height: 1125px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#howto_title {
+    color: #000000;
+    font-size: 40px;
+    font-family: "Harmonia", Arial, sans-serif;
+    line-height: 1.55;
+    font-weight: 500;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+    width: 630px;
+    text-align: center;
+}
+
+.text_underline {
+    width: 139px;
+    height: 8px;
+    background-color: #058dd9;
+    position: relative;
+    z-index: -1;
+    top: -60px;
+    left: -98px;
+}
+
+#howto_steps {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.howto_step {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.howto_step__num {
+    color: #058dd9;
+    font-size: 15px;
+    font-family: "Harmonia", Arial, sans-serif;
+    line-height: 1.55;
+    font-weight: 700;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+    animation: howto_step__num-anim 1.5s linear forwards;
+    margin-right: 15px;
+}
+
+.step_expanded {
+    flex-direction: column;
+    align-items: baseline;
+}
+
+#howto_step_main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#howto_step__link {
+    text-decoration: none;
+    font-weight: 700;
+    color: #fff;
+    font-size: 16px;
+    font-family: "Harmonia", Arial, sans-serif;
+    line-height: 1.55;
+    margin-left: 120px;
+}
+
+#howto_step__button {
+    width: 150px;
+    height: 40px;
+    background-color: #058dd9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-width: 1px;
+    border-radius: 5px;
+}
+
+@keyframes howto_step__num-anim {
+    0% {
+        opacity: 0;
+        transform: translateX(0px)translateY(0px)rotate(0deg)scale(1,1);
+        animation-timing-function: linear;
+    }
+    1% {
+        opacity: 0;
+        transform: translateX(-1000px)translateY(0px)rotate(0deg)scale(1,1);
+        animation-timing-function: ease-in-out;
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px)translateY(0px)rotate(0deg)scale(1,1);
+    }
+}
+
+.howto_step__circle {
+    border-width: 2px;
+    border-radius: 3000px;
+    background-color: #ffffff;
+    background-position: center center;
+    border-color: #058dd9;
+    border-style: solid;
+    width: 16px;
+    height: 16px;
+}
+
+.howto_step__circle_full {
+    border-width: 3px;
+    border-radius: 3000px;
+    background-color: #058dd9;
+    background-position: center center;
+    border-color: #ffffff;
+    border-style: solid;
+    width: 16px;
+    height: 16px;
+}
+
+.howto_step__text {
+    margin-left: 30px;
+    color: #000000;
+    font-size: 20px;
+    font-family: "Harmonia", Arial, sans-serif;
+    line-height: 1.2;
+    font-weight: 600;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+    animation: howto_step__text-anim 1s linear forwards;
+}
+
+#howto_steps__line {
+    position: relative;
+    background-color: #d4d4d4;
+    background-position: center center;
+    border-color: transparent;
+    z-index: -1;
+    height: 598px;
+    width: 2px;
+    left: 74px;
+    top: 25px;
+}
+
+#howto_steps_container {
+    display: flex;
+    flex-direction: row;
+}
+
+#howto_step_description {
+   /* position: relative;  */
+   color: #000000;
+   font-size: 20px;
+   font-family: "Harmonia", Arial, sans-serif;
+   line-height: 1.2;
+   font-weight: 400;
+   background-position: center center;
+   border-color: transparent;
+   border-style: solid;
+   margin-left: 115px;
+}
+
+
+@keyframes howto_step__text-anim {
+    0% {
+        opacity: 0;
+        transform: translateX(0px)translateY(0px)rotate(0deg)scale(1,1);
+        animation-timing-function: linear;
+    }
+    1% {
+        opacity: 0;
+        transform: translateX(0px)translateY(10px)rotate(0deg)scale(1,1);
+        animation-timing-function: ease-in-out;
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px)translateY(0px)rotate(0deg)scale(1,1);
+    }
+}
+
+#howto_step__play_market {
+    width: 170px;
+    height: auto;
+    animation: howto_step__play_market-anim 1s linear forwards;
+    margin-left: 30px;
+}
+
+@keyframes howto_step__play_market-anim {
+    0% {
+        opacity: 0;
+        transform: translateX(0px)translateY(0px)rotate(0deg)scale(1,1);
+        animation-timing-function: linear;
+    }
+    1% {
+        opacity: 0;
+        transform: translateX(0px)translateY(10px)rotate(0deg)scale(1,1);
+        animation-timing-function: ease-in-out;
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px)translateY(0px)rotate(0deg)scale(1,1);
+    }
+}
+
+
+
 /* Large desktops and laptops */
 @media (min-width: 1200px) {
 
@@ -1288,6 +1506,10 @@ header {
     }
 
     /* Demo */
+
+    #demo {
+        height: 1380px;
+    }
     #demo_items {
         flex-direction: column;
     }
@@ -1319,4 +1541,79 @@ header {
     .demo_item__image {
         width: 290px;
     }
+
+    #integration_container {
+        flex-direction: column-reverse;
+        height: 950px;
+    }
+
+    .cloud_top {
+        height: 40px;
+    }
+
+    .cloud_bottom {
+        height: 40px;
+    }
+
+    #integration_preview__android {
+        width: 105px;
+    }
+
+    #integration_preview__1c {
+        width: 70px;
+    }
+    
+    #integration_preview__wheel {
+        width: 40px;
+    }
+    
+    #integration_preview__bitrix {
+        width: 55px;
+    }
+    
+    #integration_preview__n {
+        width: 50px;
+    }
+    
+    #integration_preview__amocrm {
+        width: 75px;
+    }
+    
+    #integration_preview__api {
+        width: 45px;
+    }
+    
+    #integration_preview__megaplan {
+        width: 75px;
+    }
+    
+    #integration_preview__pen_container {
+        height: 110px;
+        width: 110px;
+    }
+    
+    .integration_preview__line {
+        width: 30px;
+    }
+
+    #integration_preview__pen {
+        width: 50px;
+    }
+
+    #cross1 {
+        width: 20px;
+    }
+    
+    #integration_preview__pen_item2 {
+        width: 90px;
+    }
+
+    #integration_preview {
+        grid-template-columns: repeat(9, 38px);
+        grid-template-rows: repeat(9, 38px);
+        margin-top: 40px;
+    }
+    
+    /* How To */
 }
+
