@@ -1518,6 +1518,158 @@ footer {
     flex-direction: column;
     align-items: flex-end;
 }
+
+
+/* Policy */
+#policy {
+    /* width: 1180px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 90px;
+}
+
+#policy_title {
+    color: #058dd9;
+    font-size: 46px;
+    font-family: "Harmonia", Arial, sans-serif;
+    line-height: 1.55;
+    font-weight: 700;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+    
+}
+
+.policy_link {
+    color: rgb(5, 141, 217) !important;
+    text-decoration: none;
+    border-bottom: 0px solid;
+    box-shadow: inset 0px -0px 0px 0px;
+    -webkit-box-shadow: inset 0px -0px 0px 0px;
+    -moz-box-shadow: inset 0px -0px 0px 0px;
+}
+
+.policy_text {
+    color: #000000;
+    font-size: 16px;
+    font-family: "Harmonia", Arial, sans-serif;
+    line-height: 1.55;
+    font-weight: 600;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+    width: 1180px;
+}
+
+/* Test */
+
+#test {
+    padding-top: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 64.4vh;
+}
+#test_table {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* width: 1171px; */
+} 
+
+.test_table__row {
+    display: flex;
+    flex-direction: row;  
+    justify-content: space-between;
+    height: 80px;
+}
+
+.test_table__row_item {
+    width: 140px;
+    /* height: 50px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.test_item_button {
+    width: 375px;
+}
+.test_table__green {
+    background-color: #ebfce9;
+}
+
+.test_table__red {
+    background-color: #ffeae6;
+}
+.test_table__grey {
+    background-color: #e7e7e7;
+}
+
+#test_table__row_item__photo {
+    width: 100px;
+    height: auto;
+}
+
+.test_table__expand {
+    height: 200px;
+}
+
+.test_table__row_item__text {
+    color: #000000;
+    font-size: 18px;
+    font-family: "Harmonia", Arial, sans-serif;
+    line-height: 1.55;
+    font-weight: 400;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+}
+
+#test_buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#test_button_back__link {
+    color: #058dd9;
+    font-size: 16px;
+    font-family: "Harmonia", Arial, sans-serif;
+    line-height: 1.55;
+    font-weight: 600;
+    text-decoration: none;
+    width: 200px;
+    height: 55px;
+}
+
+.test_item__btn {
+    margin-top: 0px;
+    margin-left: 50px;
+}
+
+#test_button_back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 55px;
+    border-width: 1px;
+    border-radius: 5px;
+    background-position: center center;
+    border-color: #058dd9;
+    border-style: solid;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+#test_buttons {
+    margin-top: 50px;
+}
+
 /* Large desktops and laptops */
 @media (min-width: 1200px) {
 
@@ -2006,6 +2158,69 @@ footer {
     #footer_button {
         width: 280px;
         height: 55px;
+    }
+
+    /* Policy */
+    #policy_title {
+        font-size: 18px;
+        text-align: center;
+    }
+    .policy_text {
+        font-size: 12px;
+        width: 310px;
+    }
+
+    /* test */
+
+    #test_table {
+        flex-direction: row;
+    }
+    
+    .test_table__row {
+        flex-direction: column;  
+        height: auto;
+    }
+
+    .test_table__row_item__text {
+        font-size: 10px;
+    }
+
+    .test_table__row_item {
+        width: auto;
+    }
+
+    #test_table__row_item__photo {
+        width: 40px;
+    }
+
+    #test_buttons {
+        flex-direction: column;
+    }
+
+    #test {
+        height: auto;
+    }
+
+    .test_item__btn {
+        width: 270px;
+    }
+
+    .test_button__text {
+        font-size: 14px;
+    }
+
+    .test_item__btn {
+        margin-left: 0px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    #test_button_back {
+        width: 270px;
+    }
+
+    #test_button_back__link {
+        width: 270px;  
     }
 
 }
