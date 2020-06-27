@@ -27,7 +27,9 @@ html, body {
     margin: 0;
     padding: 0;
     /* width: 100vw; */
+    overflow-x: hidden;
 }
+
 
 /* Header */
 header {
@@ -2419,5 +2421,29 @@ footer {
         width: 270px;  
     }
 
+}
+
+@media (max-width: 320px) {
+    #integration_preview {
+        grid-template-columns: repeat(9, 32px);
+        grid-template-rows: repeat(9, 32px);
+    }
+
+    .usage_button {
+        width: 285px;
+
+    }
+
+    .usage_button__text {
+        font-size: 14px;
+    }
+
+    #demo_item__image_text {
+        font-size: 15px;
+    }
+
+    #trial_item__preview_image {
+        padding-left: 0px
+    }
 }
 
