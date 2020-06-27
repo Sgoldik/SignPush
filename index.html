@@ -245,7 +245,7 @@
                         </p>
                     </div>
                 </div>
-                <a href="#tariff" class="usage_button__link">
+                <a href="#howto" class="usage_button__link">
                     <div class="usage_button">
                         <p class="usage_button__text">Протестировать бесплатно</p>
                         <img src="./images/usage/arrow_right.png" alt="right arrow" class="usage_button__image">
@@ -357,7 +357,7 @@
                         <br/>
                         свою работу, не вставая у Вас на пути
                     </p>
-                    <a href="#tariff" class="usage_button__link">
+                    <a href="#howto" class="usage_button__link">
                         <div class="usage_button">
                             <p class="usage_button__text">Попробовать бесплатно</p>
                             <img src="./images/usage/arrow_right.png" alt="right arrow" class="usage_button__image">
@@ -433,7 +433,7 @@
                     </div>
                 </div>
             </div>
-            <a id="howto_btn__link_order" rel="stylesheet" href="https://signpush.ru/">
+            <a id="howto_btn__link_order" rel="stylesheet" href="#form">
                 <div id="d_btn_order">
                         Заказать звонок
                 </div>
@@ -528,5 +528,33 @@
                 </div>
             </div>
         </footer>
+        <div id="form" class="modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title"></h3>
+                        <a href="#close" title="Close" class="close">×</a>
+                    </div>
+                    <div class="modal_body">    
+                        <h1 class="modal_body__title">Заказать консультацию специалиста</h1>
+                        <p class="modal_body__text">Мы Вам перезвоним и расскажем как сделать онлайн подпись</p>
+                        <form action="./scripts/send.php" method="post" id="modal_form">
+                            <input required type="email" placeholder="E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" name="email" id="modal_email" class="modal_input">
+                            <input required type="text" name="name" placeholder="Имя" id="modal_name" class="modal_input">
+                            <input required type="tel" name="phone" placeholder="Номер телефона" pattern="[7-8]{1}[0-9]{3}[0-9]{3}[0-9]{2}[0-9]{2}" id="modal_phone" class="modal_input">
+                            <button type="submit" id="modal_submit">Отправить</button>
+                        </form>
+                        <p class="modal_body__text">
+                            Нажимая кнопку «Отправить» Вы соглашаетесь
+                        </br>
+                            c
+                            <a href="./pages/policy/index.html" id="modal_body__link">
+                                политикой обработки персональных данных
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
