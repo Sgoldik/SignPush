@@ -122,6 +122,10 @@ header {
     animation: description_titie-anim 1s linear forwards;
 }
 
+#description_title.is-paused {
+    animation-play-state: paused;
+}
+
 @keyframes description_titie-anim {
     0% {
         opacity: 0;
@@ -146,6 +150,10 @@ header {
     line-height: 1.55;
     font-weight: 400;
     animation: description_title_text 1s linear forwards;
+}
+
+#description_text.is-paused {
+    animation-play-state: paused;
 }
 
 @keyframes description_title_text {
@@ -241,12 +249,20 @@ header {
     grid-column: 2;
 }
 
+#description_preview__pen.is-paused {
+    animation-play-state: paused;
+}
+
 #description_preview__loop {
     width: 130px;
     animation: loop-animation 8s infinite linear;
     grid-area: loop;
     grid-row: 3;
     grid-column: 2;
+}
+
+#description_preview__loop.is-paused {
+    animation-play-state: paused;
 }
 
 #description_preview__shield {
@@ -257,6 +273,10 @@ header {
     grid-column: 6;
 }
 
+#description_preview__shield.is-paused {
+    animation-play-state: paused;
+}
+
 #description_preview__pc {
     width: 200px;
     animation: pc-animation 9s infinite linear;
@@ -264,6 +284,11 @@ header {
     grid-row: 5;
     grid-column: 6;
 }
+
+#description_preview__pc.is-paused {
+    animation-play-state: paused;
+}
+
 #boiler {
     background-color: #fff;
     grid-area: b;
@@ -437,6 +462,11 @@ header {
     animation: preview_image-left-anim 2s linear forwards;
 }
 
+.benefits_item__preview_image-left.is-paused {
+    animation-play-state: paused;
+}
+
+
 @keyframes preview_image-left-anim {
     0% {
         opacity: 0;
@@ -457,6 +487,10 @@ header {
 .benefits_item__preview_image-right {
     top: 100px;
     animation: preview_image-right-anim 2s linear forwards;
+}
+
+.benefits_item__preview_image-right.is-paused {
+    animation-play-state: paused;
 }
 
 @keyframes preview_image-right-anim {
@@ -494,6 +528,10 @@ header {
     animation: benefits_item__description_title-anim 1s linear forwards;
 }
 
+.benefits_item__description_title.is-paused {
+    animation-play-state: paused;
+}
+
 @keyframes benefits_item__description_title-anim {
     0% {
         opacity: 0;
@@ -522,6 +560,10 @@ header {
     border-color: transparent;
     border-style: solid;
     animation: benefits_item__description_text-anim 1.4s linear forwards;
+}
+
+.benefits_item__description_text.is-paused {
+    animation-play-state: paused;
 }
 
 @keyframes benefits_item__description_text-anim {
@@ -681,6 +723,10 @@ header {
     animation: usage_button__image-anim 6s infinite linear;
 }
 
+.usage_button__image.is-paused {
+    animation-play-state: paused;
+}
+
 #demo_item__images {
     display: flex;
     flex-direction: column;
@@ -777,6 +823,10 @@ header {
     -webkit-transform: rotate(315deg);
 }
 
+#demo_item__arrow_left.is-paused {
+    animation-play-state: paused;
+}
+
 @keyframes demo_item__arrow_left-anim {
     0% {
         opacity: 1;
@@ -813,6 +863,10 @@ header {
     width: 190px;
     top: 350px;
     left: 120px;
+}
+
+#demo_item__image_text.is-paused {
+    animation-play-state: paused;
 }
 
 @keyframes demo_item__image_text-anim {
@@ -880,6 +934,10 @@ header {
     grid-area: android;
 }
 
+#integration_preview__android.is-paused {
+    animation-play-state: paused;
+}
+
 @keyframes integration_preview-anim {
     0% {
         opacity: 0;
@@ -909,11 +967,19 @@ header {
     grid-area: c;
 }
 
+#integration_preview__1c.is-paused {
+    animation-play-state: paused;
+}
+
 #integration_preview__wheel {
     animation: integration_preview-anim 2.8s linear forwards;
     width: 60px;
     height: auto;
     grid-area: wheel;
+}
+
+#integration_preview__wheel.is-paused {
+    animation-play-state: paused;
 }
 
 #integration_preview__bitrix {
@@ -923,11 +989,19 @@ header {
     animation: integration_preview-anim 2.3s linear forwards;
 }
 
+#integration_preview__bitrix.is-paused {
+    animation-play-state: paused;
+}
+
 #integration_preview__n {
     width: 70px;
     height: auto;
     grid-area: n;
     animation: integration_preview-anim 2.7s linear forwards;
+}
+
+#integration_preview__n.is-paused {
+    animation-play-state: paused;
 }
 
 #integration_preview__amocrm {
@@ -937,6 +1011,10 @@ header {
     animation: integration_preview-anim 2.4s linear forwards;
 }
 
+#integration_preview__amocrm.is-paused {
+    animation-play-state: paused;
+}
+
 #integration_preview__api {
     width: 65px;
     height: auto;
@@ -944,11 +1022,19 @@ header {
     animation: integration_preview-anim 2.5s linear forwards;
 }
 
+#integration_preview__api.is-paused {
+    animation-play-state: paused;
+}
+
 #integration_preview__megaplan {
     width: 135px;
     height: auto;
     grid-area: megaplan;
     animation: integration_preview-anim 2.6s linear forwards;
+}
+
+#integration_preview__megaplan.is-paused {
+    animation-play-state: paused;
 }
 
 #integration_preview__pen_container {
@@ -996,9 +1082,17 @@ header {
     grid-area: line1;
 }
 
+#integration_preview__line1_container.is-paused {
+    animation-play-state: paused;
+}
+
 #integration_preview__line2_container {
     animation: integration_preview__line-anim 0.7s linear forwards;
     grid-area: line2;
+}
+
+#integration_preview__line2_container.is-paused {
+    animation-play-state: paused;
 }
 
 #integration_preview__line3_container {
@@ -1006,9 +1100,17 @@ header {
     grid-area: line3;
 }
 
+#integration_preview__line3_container.is-paused {
+    animation-play-state: paused;
+}
+
 #integration_preview__line4_container {
     animation: integration_preview__line-anim 1.9s linear forwards;
     grid-area: line4;
+}
+
+#integration_preview__line4_container.is-paused {
+    animation-play-state: paused;
 }
 
 #integration_preview__line5_container {
@@ -1016,9 +1118,17 @@ header {
     grid-area: line5;
 }
 
+#integration_preview__line5_container.is-paused {
+    animation-play-state: paused;
+}
+
 #integration_preview__line6_container {
     animation: integration_preview__line-anim 1.7s linear forwards;
     grid-area: line6;
+}
+
+#integration_preview__line6_container.is-paused {
+    animation-play-state: paused;
 }
 
 #integration_preview__line7_container {
@@ -1026,9 +1136,17 @@ header {
     grid-area: line7;
 }
 
+#integration_preview__line7_container.is-paused {
+    animation-play-state: paused;
+}
+
 #integration_preview__line8_container {
     animation: integration_preview__line-anim 1.3s linear forwards;
     grid-area: line8;
+}
+
+#integration_preview__line8_container.is-paused {
+    animation-play-state: paused;
 }
 
 @keyframes integration_preview__line-anim {
@@ -1172,6 +1290,14 @@ header {
     margin-right: 15px;
 }
 
+.is-paused {
+    animation-play-state: paused;
+}
+
+.howto_step__num.is-paused {
+    animation-play-state: paused;
+}
+
 .step_expanded {
     flex-direction: column;
     align-items: baseline;
@@ -1256,6 +1382,10 @@ header {
     animation: howto_step__text-anim 1s linear forwards;
 }
 
+.howto_step__text.is-paused {
+    animation-play-state: paused;
+}
+
 #howto_steps__line {
     position: relative;
     background-color: #d4d4d4;
@@ -1309,6 +1439,10 @@ header {
     height: auto;
     animation: howto_step__play_market-anim 1s linear forwards;
     margin-left: 30px;
+}
+
+#howto_step__play_market.is-paused {
+    animation-play-state: paused;
 }
 
 @keyframes howto_step__play_market-anim {
@@ -1390,6 +1524,10 @@ header {
     animation: trial_item__preview_image-anim 1s linear forwards;
     width: 510px;
     height: auto;
+}
+
+#trial_item__preview_image.is-paused {
+    animation-play-state: paused;
 }
 
 #trial_item__description_title {
@@ -1550,8 +1688,12 @@ footer {
 }
 
 /* Mobile menu */
-input {display: none;}
-label {cursor: pointer;}
+#showmenu {
+    display: none
+}
+label {
+    cursor: pointer;
+}
 
 .nav {
     user-select: none;
@@ -1567,15 +1709,16 @@ label {cursor: pointer;}
     padding: 5px 10px 10px;
     top: 2px;
     font-size: 23px;
+
 }
 
 .nav__back {
-    position: fixed;
+    /* position: fixed;
     top: 0;
     right: 0;  
     bottom: 0;
     left: 0;
-    transition: background-color .3s;
+    transition: background-color .3s; */
 }
 
 .menu, .menu__submenu{
@@ -1654,7 +1797,7 @@ label {cursor: pointer;}
     border-color: #ffffff;
     border-style: solid;
     transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-    width: 200px;
+    width: 150px;
     height: 55px;
     display: flex;
     justify-content: center;
@@ -1667,7 +1810,7 @@ label {cursor: pointer;}
     font-family: "Harmonia", Arial, sans-serif;
     line-height: 1.55;
     font-weight: 700;
-    width: 200px;
+    width: 150px;
     height: 55px;
     text-decoration: none;
 }
@@ -1677,12 +1820,24 @@ label {cursor: pointer;}
     bottom: 0;
 }
 
-.menu__item:hover,.nav__showmenu:hover,.menu__showsub:hover {opacity: 0.7;}
-.menu::-webkit-scrollbar {display: none;}
-.nav__check:checked+.nav__showmenu {color:#fff;}
-.menu__check:checked~.menu__submenu {max-height: 100vh;}
-.menu__check:checked+.menu__showsub {transform: rotate(180deg);}
-.nav__check:checked~.menu {transform: translateX(0);}
+.menu__item:hover,.nav__showmenu:hover,.menu__showsub:hover {
+    opacity: 0.7;
+}
+.menu::-webkit-scrollbar {
+    display: none;
+}
+.nav__check:checked+.nav__showmenu {
+    color:#fff;
+}
+.menu__check:checked~.menu__submenu {
+    max-height: 100vh;
+}
+.menu__check:checked+.menu__showsub {
+    transform: rotate(180deg);
+}
+.nav__check:checked~.menu {
+    transform: translateX(0);
+}
 
 
 /* Policy */
