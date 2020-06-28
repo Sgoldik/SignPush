@@ -11,7 +11,7 @@ const animations = [
     '#integration_preview__line6_container', '#integration_preview__line7_container', '#integration_preview__line8_container',
     '#howto_step__num_1', '#howto_step__num_2', '#howto_step__num_3', '#howto_step__num_4', '#howto_step__num_5',
     '#howto_step__num_6', '#howto_step__text_1', '#howto_step__text_2', '#howto_step__text_3', '#howto_step__text_4',
-    '#howto_step__text_5', '#howto_step__text_6','#howto_step__play_market', '#trial_item__preview_image'
+    '#howto_step__text_5', '#howto_step__text_6','#howto_step__play_market', '#trial_item__preview_image', "#demo_item__sign"
 ];
 
 window.addEventListener("DOMContentLoaded", function() {
@@ -19,12 +19,8 @@ window.addEventListener("DOMContentLoaded", function() {
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
                 const lazyImage = entry.target
-                
-                //lazyImage.classList.toggle('is-paused')
-                console.log("lazy loading ", lazyImage)
                 lazyImage.classList.remove("is-paused");
                 imgObserver.unobserve(lazyImage);
-                //lazyImage.src = lazyImage.dataset.src
             }
         })
     });
@@ -33,5 +29,19 @@ window.addEventListener("DOMContentLoaded", function() {
         imageObserver.observe(el);
         
     })
-    
+
+    const anchors = document.querySelectorAll('a[href*="#"]')
+
+    for (let anchor of anchors) {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault()
+        
+        const blockID = anchor.getAttribute('href').substr(1)
+        
+        document.getElementById(blockID).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+            })
+        })
+    }
 })
