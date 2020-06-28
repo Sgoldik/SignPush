@@ -180,6 +180,26 @@ header {
     align-items: center;
 }
 
+#d_btn_get {
+    transition: all 0.8s ease-in-out !important;
+}
+
+#d_btn_buy {
+    transition: all 0.8s ease-in-out !important;
+}
+
+#d_btn_get:hover {
+    background-color: #058dd9;
+    color: #fff;
+    border-radius: 5px;
+}
+
+#d_btn_buy:hover {
+    background-color: #000000;
+    color: #fff;
+    border-radius: 5px;
+}
+
 #description_btn__link_get {
     text-decoration: none;
     font-size: 20px;
@@ -196,6 +216,7 @@ header {
     line-height: 1.55;
     font-weight: 500;
     color: #777777;
+    transition: all 0.8s ease-in-out !important;
 }
 
 #description_preview__blocks {
@@ -1335,6 +1356,13 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.8s ease-in-out !important;
+}
+
+#d_btn_order:hover {
+    background-color: #058dd9;
+    color: #fff;
+    border-radius: 5px;
 }
 
 /* Trial */
@@ -1520,6 +1548,141 @@ footer {
     flex-direction: column;
     align-items: flex-end;
 }
+
+/* Mobile menu */
+input {display: none;}
+label {cursor: pointer;}
+
+.nav {
+    user-select: none;
+    display: none;
+
+}
+
+.nav__showmenu {
+    position: relative;
+    z-index: 3;
+    display: inline-block;
+    margin-left: -10px;
+    padding: 5px 10px 10px;
+    top: 2px;
+    font-size: 23px;
+}
+
+.nav__back {
+    position: fixed;
+    top: 0;
+    right: 0;  
+    bottom: 0;
+    left: 0;
+    transition: background-color .3s;
+}
+
+.menu, .menu__submenu{
+    list-style: none;
+    padding: 0;
+    color: #fff;
+    overflow: hidden;
+  }
+
+.menu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-end;
+    width: 260px;
+    margin: 0;
+    padding: 17px 0;
+    text-transform: uppercase;
+    line-height: 2em;
+    background-color: #058dd9;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    transform: translateX(100%);
+    transition: transform .3s;
+    will-change: transform;
+    backface-visibility: hidden;
+    padding-top: 70px;
+    padding-right: 20px;
+
+}
+
+.menu__submenu {
+    font-size: .8em;
+    background-color: #ddd;
+    max-height: 0;
+    transition: max-height .3s ease-in-out;
+}
+
+.menu__showsub {
+    position: absolute;
+    right: 0;
+    margin-top: -34px;
+    padding: 10px;
+    line-height: normal;
+}
+
+#menu_logo {
+    max-width: 120px;
+    height: auto;
+    padding-bottom: 20px;
+}
+
+.menu__item {  
+    display: block;
+    text-align: right;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Harmonia';
+    padding-bottom: 15px;
+}
+
+.menu__submenu .menu__item {
+    color: #058dd9;
+}
+
+#menu_button {
+    border-width: 1px;
+    border-radius: 5px;
+    background-position: center center;
+    border-color: #ffffff;
+    border-style: solid;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    width: 200px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+#menu_button__link {
+    color: #ffffff;
+    font-size: 15px;
+    font-family: "Harmonia", Arial, sans-serif;
+    line-height: 1.55;
+    font-weight: 700;
+    width: 200px;
+    height: 55px;
+    text-decoration: none;
+}
+
+.nav__check:checked~.nav__back {
+    background-color: rgba(0,0,0,.2);
+    bottom: 0;
+}
+
+.menu__item:hover,.nav__showmenu:hover,.menu__showsub:hover {opacity: 0.7;}
+.menu::-webkit-scrollbar {display: none;}
+.nav__check:checked+.nav__showmenu {color:#fff;}
+.menu__check:checked~.menu__submenu {max-height: 100vh;}
+.menu__check:checked+.menu__showsub {transform: rotate(180deg);}
+.nav__check:checked~.menu {transform: translateX(0);}
 
 
 /* Policy */
@@ -1875,6 +2038,11 @@ footer {
 
 /* Portrait tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
+    .nav {
+        user-select: none;
+        display: block;
+    
+    }
     menu {
         display: none;
     }
@@ -2447,6 +2615,11 @@ footer {
 
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 992px) {
+    .nav {
+        user-select: none;
+        display: block;
+    
+    }
     menu {
         display: none;
     }
@@ -3009,8 +3182,19 @@ footer {
 
 /* Landscape phones and smaller */
 @media (max-width: 480px) {
+    .nav {
+        user-select: none;
+        display: block;
+    
+    }
     menu {
         display: none;
+    }
+    header {
+        justify-content: space-evenly;
+        width: 100%;
+        padding: 0px;
+
     }
 
     /* Description */
