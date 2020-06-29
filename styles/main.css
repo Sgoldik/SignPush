@@ -1900,7 +1900,7 @@ label {
     margin-left: -10px;
     padding: 5px 10px 10px;
     top: 2px;
-    font-size: 23px;
+    font-size: 28px;
 
 }
 
@@ -3606,8 +3606,9 @@ label {
         display: none;
     }
     header {
-        justify-content: space-evenly;
-        width: 100%;
+        margin: 0 5% 0 5%;
+        justify-content: space-between;
+        width: 90%;
         padding: 0px;
 
     }
@@ -4169,8 +4170,9 @@ label {
         display: none;
     }
     header {
-        justify-content: space-evenly;
-        width: 100%;
+        margin: 0 5% 0 5%;
+        justify-content: space-between;
+        width: 90%;
         padding: 0px;
 
     }
