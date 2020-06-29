@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../../styles/main.css" type="text/css"/>
         <link rel="shortcut icon" href="../../fav.ico" type="image/x-icon" />
+        <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
         <title>SignPush</title>
     </head>
     <body>
@@ -118,10 +119,10 @@
                         <p class="test_table__row_item__text"></p>
                     </div>
                     <div class="test_table__row_item">
-                        <p class="test_table__row_item__text"></p>
+                        
                     </div>
                     <div class="test_table__row_item">
-                        <p class="test_table__row_item__text"></p>
+                        <div id="map"></div>
                     </div>
                     <div class="test_table__row_item">
                         <img src="../../images/test/man.jpg" alt="man" id="test_table__row_item__photo">
@@ -132,7 +133,7 @@
                         <p class="test_table__row_item__text">Ожидается<br/>подписание</p>
                     </div>
                     <div class="test_table__row_item">
-                        <p class="test_table__row_item__text">petrov23@yandex.ru</p>
+                        <p class="test_table__row_item__text">ptrvv23@bk.ru</p>
                     </div>
                     <div class="test_table__row_item">
                         <p class="test_table__row_item__text">Petrov23</p>
@@ -307,4 +308,13 @@
             </div>
         </div>
     </body>
+    <script type="text/javascript">
+        ymaps.ready(function () {
+        var map = new ymaps.Map("map", {
+          center: [55.76, 37.64],
+          zoom: 7
+        });
+        console.log('sadas')
+      })
+    </script>
 </html>
