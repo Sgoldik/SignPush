@@ -2074,7 +2074,6 @@ label {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 64.4vh;
 }
 #test_table {
     display: flex;
@@ -2082,6 +2081,7 @@ label {
     justify-content: center;
     border: 1px solid #000000;
     border-radius: 5px;
+    margin-top: 50px;
     /* width: 1171px; */
 } 
 
@@ -2148,6 +2148,7 @@ label {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin-bottom: 50px;;
 }
 
 #test_button_back__link {
@@ -2382,10 +2383,10 @@ label {
 
 /* Large desktops and laptops */
 @media (min-width: 1200px) and (max-width: 1600px) {
-    #description_preview {
+    /* #description_preview {
         grid-template-columns: repeat(7, 60px);
         grid-template-rows: repeat(7, 60px);
-    }
+    } */
 
     #demo_item__sign {
         top: 350px;
@@ -2406,7 +2407,7 @@ label {
         left: -170px;
     }
 
-    #description_preview {
+    /* #description_preview {
         grid-template-columns: repeat(7, 60px);
         grid-template-rows: repeat(7, 60px);
     }
@@ -2432,12 +2433,12 @@ label {
         top: -100px;
         right: 30px;
         width: 100px;
-    }
+    } */
 
-
+/* 
     #description_preview__pc {
         width: 150px;
-    }
+    } */
 }
 
 /* Portrait tablets and medium desktops */
@@ -3006,7 +3007,7 @@ label {
     .test_item__btn {
         margin-left: 0px;
         margin-top: 30px;
-        margin-bottom: 30px;
+        /* margin-bottom: 30px; */
     }
 
     #test_button_back {
@@ -3578,7 +3579,7 @@ label {
     .test_item__btn {
         margin-left: 0px;
         margin-top: 30px;
-        margin-bottom: 30px;
+        /* margin-bottom: 30px; */
     }
 
     #test_button_back {
@@ -4140,7 +4141,7 @@ label {
     .test_item__btn {
         margin-left: 0px;
         margin-top: 30px;
-        margin-bottom: 30px;
+        /* margin-bottom: 30px; */
     }
 
     #test_button_back {
@@ -4154,6 +4155,11 @@ label {
 
 /* Landscape phones and smaller */
 @media (max-width: 480px) {
+
+    #header_logo {
+        width: 120px;
+    }
+
     .nav {
         user-select: none;
         display: block;
@@ -4698,7 +4704,7 @@ label {
     .test_item__btn {
         margin-left: 0px;
         margin-top: 30px;
-        margin-bottom: 30px;
+        /* margin-bottom: 30px; */
     }
 
     #test_button_back {
