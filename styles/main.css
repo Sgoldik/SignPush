@@ -1984,6 +1984,7 @@ label {
     height: 55px;
     display: flex;
     justify-content: center;
+    align-items: center;
     
 }
 
@@ -2509,6 +2510,7 @@ label {
 
     #description_preview__pc {
         width: 150px;
+        top: 30px;
     }
 
     /* Benefits */
