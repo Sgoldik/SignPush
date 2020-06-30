@@ -30,8 +30,7 @@ window.addEventListener("DOMContentLoaded", function() {
         
     })
 
-    const anchors = document.querySelectorAll('a[href*="#"]')
-
+    const anchors = document.querySelectorAll('a.header_menu_list__item_link')
     for (let anchor of anchors) {
     anchor.addEventListener('click', function (e) {
         e.preventDefault()
